@@ -1,0 +1,66 @@
+
+<div class="intro container">
+    <div class="contenedor">
+    <div class="container">
+
+        <div class="box-ant3" id="startScreen3" >
+            <p>Módulo Práctio: Rayos Cósmicos.</p>
+            <button class="buttom" onclick="showTest3()">Empezar el test</button>
+
+        </div>
+
+        <div class="box3" id="questionScreen3" style="display: none;">
+            <div class="title">
+                Rayos Cósmicos
+            </div>
+            <div class="title4">
+                Pregunta 1 de 10
+            </div>
+            <div class="header1">
+                <div class="scoreBox3">Aciertos: <span></span></div>
+                <div class="timerBox3"> Fallos : <span></span> </div>
+            </div>
+            <div class="questionBox3">
+                Atendiendo a su origen  ,¿Cómo podemos clasificar los rayos cósmicos?
+            </div>
+            <div class="optionBox3">
+                <p onclick="checkAnswer2(this)" data-opt="1"> 1.Origen atmosférico, terreste y submarino.</p>
+                <p onclick="checkAnswer2(this)" data-opt="2"> 2. Origen extragaláctico, galáctico y desconocido.</p>
+                <p onclick="checkAnswer2(this)" data-opt="3"> 3. Origen solar y galáctico.</p>
+                <p onclick="checkAnswer2(this)" data-opt="4"> 4. Origen extagláctico.</p>
+            </div>
+    
+            <div class="footer1">
+                <button  class="buttom" onclick="showNext2()">
+                    Siguiente
+                </button>
+                
+                <button class="buttom" onclick="showResult2(1)">
+                    Ver Resultado
+                </button>
+            </div>
+        </div>
+        <div class="box3 " id="resultScreen3" style="display: none;">
+            <div class="title">
+                Resultado: Rayos cósmicos
+            </div>
+            <div class="resultBox3">
+                <label>Preguntas: </label>
+                <span id="totalQuestion3"> 10</span>
+    
+                <label>Respondidas: </label>
+                <span id="attemptlQuestion3"> 0</span>
+                <label>Correctas: </label>
+                <span id="correctAnswers3"> 10</span>
+                <label>Incorrectas: </label>
+                <span id="wrongAnswers3"> 10</span>
+            </div>
+            <div class="buttonBox3">
+                <button [routerLink]="['/test']" class="buttom">Página principal</button>
+                <button  class="buttom" (click)="recargar()">Reinicar/ Recargar Test</button>
+            </div>
+        </div>
+    </div>    
+        
+    </div> 
+</div>  

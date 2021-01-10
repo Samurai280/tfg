@@ -1,0 +1,65 @@
+<div class="intro container">
+    <div class="contenedor">
+    <div class="container">
+
+        <div class="box-ant1" id="startScreen1">
+            <p>Módulo Práctio: Descubrimiento de los Rayos cósmicos</p>
+            <button class="buttom" onclick="showTest1()">Empezar el test</button>
+
+        </div>
+
+        <div class="box1 " id="questionScreen1" style="display: none;">
+            <div class="title">
+                Descubrimiento de los Rayos Cósmicos
+            </div>
+            <div class="title2">
+                Pregunta 1 de 10
+            </div>
+            <div class="header1">
+                <div class="scoreBox1">Aciertos: <span></span></div>
+                <div class="timerBox1"> Fallos : <span></span> </div>
+            </div>
+            <div class="questionBox1">
+                "¿A quién se le atribuye el inicio del estudio de los Rayos Cósmicos?"
+            </div>
+            <div class="optionBox1">
+                <p onclick="checkAnswer(this)" data-opt="1"> 1.M.Faraday.</p>
+                <p onclick="checkAnswer(this)" data-opt="2"> 2. C.A.Coulomb.</p>
+                <p onclick="checkAnswer(this)" data-opt="3"> 3. Wilson.</p>
+                <p onclick="checkAnswer(this)" data-opt="4"> 4. V.F.Hess.</p>
+            </div>
+    
+            <div class="footer1">
+                <button  class="buttom" onclick="showNext()">
+                    Siguiente
+                </button>
+                
+                <button class="buttom" onclick="showResult(1)">
+                    Ver Resultado
+                </button>
+            </div>
+        </div>
+        <div class="box1 " id="resultScreen1" style="display: none;">
+            <div class="title">
+                Resultado :Descubrimeinto
+            </div>
+            <div class="resultBox1">
+                <label>Preguntas: </label>
+                <span id="totalQuestion1"> 10</span>
+    
+                <label>Respondidas: </label>
+                <span id="attemptlQuestion1"> 0</span>
+                <label>Correctas: </label>
+                <span id="correctAnswers1"> 10</span>
+                <label>Incorrectas: </label>
+                <span id="wrongAnswers1"> 10</span>
+            </div>
+            <div class="buttonBox1">
+                <button [routerLink]="['/test']" class="buttom">Página principal</button>
+                <button  class="buttom" (click)="recargar()">Reinicar/ Recargar Test</button>
+            </div>
+        </div>
+    </div>    
+        
+    </div> 
+</div>  

@@ -1,0 +1,408 @@
+/* Globales */
+.ecua {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro .contenedor {
+    background-color: whitesmoke;
+    padding: 2rem 2rem;
+    font-size: 2.5w;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    border: 10px double black;
+    position: relative;
+    z-index: 100;
+    width: 90vw;
+  }
+  
+  .intro .contenedor::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url("./img/37775.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.08;
+  }
+  
+  .intro .contenedor h1 {
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+  }
+  .intro .contenedor h2 {
+    -webkit-text-stroke: 1px black;
+    font-size: 30px;
+  }
+  .intro .contenedor h3 {
+    -webkit-text-stroke: 1px black;
+    font-size: 20px;
+  }
+  .margen {
+      margin-left: 40px;
+  }
+  
+  .desc-imagen-rayo {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .desc-imagen-rayo img {
+    height: auto;
+    width: auto;
+    transition: .9 ease;
+    margin-bottom: 10px;
+  }
+ 
+  .desc-imagen-rayo-1 {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .desc-imagen-rayo-1 img{
+    height: auto;
+    width: auto;
+  }
+  
+  .desc-imagen-rayo-1 p{
+    margin-bottom: 10px;
+    font-family: 'Ranchers', cursive;
+  }
+  .desc-imagen-rayo p{
+    margin-bottom: 10px;
+    font-family: 'Ranchers', cursive;
+  }
+  .oculto {
+    display: none;
+  }
+  .img-cs p{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-family: 'Ranchers', cursive;
+  }
+  
+  .img-cs img{
+    width: auto;
+    height: auto;
+    margin-bottom: 10px ; 
+    margin-left: 120px;
+  }
+  
+  /**Table**/
+  
+  .intro .contenedor .desc-imagen-1 {
+    padding: 30px 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  .intro .contenedor .desc-imagen .img-5 a img{
+    height: 60vh;
+  }
+ 
+  
+  .intro .contenedor .desc-imagen .img-5 p {
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+  }
+  .intro .contenedor .desc-imagen-1 .img-5 a img{
+    height: 60vh;
+  }
+  
+  .intro .contenedor .desc-imagen-1 .img-5 p {
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+  }
+  
+  .intro .contenedor .desc-imagen-1 .img-6 a img{
+    height: 60vh;
+  }
+  
+  .intro .contenedor .desc-imagen-1 .img-6 p {
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+  }
+  
+  .intro .contenedor .desc-imagen .img-7 a img{
+    height: 30vh;
+    width: 400px;
+  }
+  
+  .intro .contenedor .desc-imagen .img-7 p {
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+  }
+  .intro .contenedor .tablas-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .tablas-part {
+    margin-top: 100px;
+    margin-bottom: 130px;
+    transform: rotateZ(90deg);
+  }
+  .boton-tabla {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .margen-1 {
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  caption {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 16px;
+  }
+  
+  th {
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.637);
+  }
+  
+  td {
+    text-align: justify;
+    color: #5b5b5b;
+    text-align: center;
+    font-size: 12px;
+    vertical-align: middle;
+  }
+  
+  .row1 {
+    background: #ffffff;
+  }
+  
+  .row2 {
+    background: #e5e5e5;
+  }
+  
+  tbody {
+    padding-bottom: 20px;
+  }
+  
+  
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+  @media only screen and (min-width: 1000px) {
+    .intro .contenedor {
+      background-color: whitesmoke;
+      padding: 4rem 10rem;
+      font-size: 1vw;
+      margin: 0px 140px;
+      margin-top: 140px;
+      margin-bottom: 100px;
+      border: 10px double black;
+      position: relative;
+      z-index: 1;
+      width: 95%;
+    }
+    .intro .contenedor::after {
+      position: absolute;
+      content: " ";
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background-color: black;
+      opacity: 0.4;
+      z-index: -1;
+      background-image: url("./img/37775.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 0.08;
+    }
+    .intro .contenedor h1 {
+      -webkit-text-stroke: 1px black;
+      font-size: 100px;
+    }
+    .intro .contenedor h2 {
+      -webkit-text-stroke: 1px black;
+      font-size: 60px;
+    }
+    .intro .contenedor h3 {
+      -webkit-text-stroke: 1px black;
+      font-size:50px;
+    }
+    
+    .marcoFoto img {
+        transition: all .4s ease;
+        width: 100%;
+      }
+      .marcoFoto img:hover {
+        transform:scale(1.5) rotate(0deg);
+        width: 1200px;
+      }
+      .desc-imagen-rayo {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 10px;
+      }
+      .desc-imagen-rayo img {
+        height: 600px;
+        width: auto;
+        transition: .9 ease;
+        margin-bottom: 10px;
+      }
+     
+      .desc-imagen-rayo-1 {
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .desc-imagen-rayo-1 img {
+        height: 200px;
+        width: auto;
+        transition: .9 ease;
+      }
+      .desc-imagen-rayo-1 p{
+        margin-bottom: 10px;
+        font-family: 'Ranchers', cursive;
+      }
+      .desc-imagen-rayo p{
+        margin-bottom: 10px;
+        font-family: 'Ranchers', cursive;
+      }
+      
+      .img-cs p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 0px;
+        margin-bottom: 20px;
+        font-family: 'Ranchers', cursive;
+      }
+      
+      .img-cs img{
+        width: auto;
+        height: auto;
+        margin-bottom: 10px ; 
+        margin-left: 120px;
+      }
+      
+      /**Table**/
+      
+      .intro .contenedor .desc-imagen-1 {
+        padding: 30px 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+      }
+      .intro .contenedor .desc-imagen .img-5  img{
+        height: 60vh;
+      }
+      
+      .intro .contenedor .desc-imagen .img-5 p {
+        text-align: center;
+        font-family: 'Ranchers', cursive;
+      }
+      .intro .contenedor .desc-imagen-1 .img-5 a img{
+        height: 60vh;
+      }
+      
+      .intro .contenedor .desc-imagen-1 .img-5 p {
+        text-align: center;
+        font-family: 'Ranchers', cursive;
+      }
+      
+      .intro .contenedor .desc-imagen-1 .img-6 a img{
+        height: 60vh;
+      }
+      
+      .intro .contenedor .desc-imagen-1 .img-6 p {
+        text-align: center;
+        font-family: 'Ranchers', cursive;
+      }
+      
+      .intro .contenedor .desc-imagen .img-7 a img{
+        height: 30vh;
+        width: 400px;
+      }
+      .intro .contenedor .desc-imagen .img-7 p {
+        text-align: center;
+        font-family: 'Ranchers', cursive;
+      }
+      
+      .tablas-part {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 60px;
+        width: 800px;
+        height: 280px;
+        margin: 0 auto;
+        transform: rotateZ(0deg);
+      }
+      
+      caption {
+        margin-top: 20px;
+        margin-bottom: 15px;
+        font-size: 16px;
+      }
+      
+      th {
+        text-align: center;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.637);
+      }
+      
+      td {
+        text-align: justify;
+        color: #5b5b5b;
+        text-align: center;
+        font-size: 12px;
+        vertical-align: middle;
+      }
+      
+      .row1 {
+        background: #ffffff;
+      }
+      
+      .row2 {
+        background: #e5e5e5;
+      }
+      
+      tbody {
+        padding-bottom: 20px;
+      }
+      .oculto {
+        display: block;
+      }
+      
+      /**End Table**/
+    }

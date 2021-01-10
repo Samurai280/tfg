@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Principal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <!--Navegación-->
+  <section id="nav-bar" class="container">
+    <header class="nav-bar">
+      <div class="brand"><a [routerLink]="['/pagina-principal']">
+          <img src="./assets/img/logo_uex_gris_fondo-negro.png" alt="Logo de Uex">
+        </a></div>
+      <div class="nav-list">
+        <div class="hamburger">
+          <div class="bar"></div>
+        </div>
+        <ul>
+          <li><a [routerLink]="['/pagina-teoria']">Teoría</a>
+            <ul>
+              <li><a [routerLink]="['/introduccion']">Introducción</a></li>
+              <li><a [routerLink]="['/descubrimiento']">Desc</a></li>
+              <li><a [routerLink]="['/particulas']">Partículas Elementales</a></li>
+              <li><a [routerLink]="['/rayos']">Rayos Cósmicos</a></li>
+              <li><a [routerLink]="['/detectores']">Detectores</a></li>
+              <li><a [routerLink]="['/glosario']">Glosario</a></li>
+            </ul>
+          </li>
+          <li><a [routerLink]="['/pagina-practica']">Práctica</a>
+            <ul>
+              <li><a [routerLink]="['/test']">Tipo test</a></li>
+              <li><a [routerLink]="['/concepto']">Preguntas y Problemas</a></li>
+            </ul>
+          </li>
+          <li><a [routerLink]="['/experimento']">Experimento</a></li>
+          
+          
+        </ul>
+      </div>
+    </header>
+  </section>
+  <!--Finalizamos la Navegación-->
+
+  <!--Etiquetas de todos las pposibles vistas de la página.-->
+  <router-outlet></router-outlet>  
+
+
+
+  
+  <a href="#" class="subir">Ir arriba</a>
+  <!--Sección Footer-->
+  <footer id="footer" class="footer container">
+    <div class="footer-contact">
+      <h1 class="footer-contact-heading">Contacta conmigo</h1>
+      <p class="footer-contact-info">Email: vmordiales@gmail.com</p>
+      <p class="footer-contact-info">Victor Manuel Ordiales García &copy; </p>
+    </div>
+  </footer>
+  <!-- Final Sección Footer-->
+  
+  <!--Sidebar de Redes Sociales-->
+  <div class="social">
+    <ul>
+      <li class="active">
+        <span class="tooltip">Teoría</span>
+        <a [routerLink]="['/pagina-teoria']"><i class="far fa-address-book"></i></a>
+      </li>
+      <li>
+        <span class="tooltip">Práctica</span>
+        <a [routerLink]="['/pagina-practica']"><i class="fas fa-pencil-alt"></i></a>
+      </li>
+      <li>
+        <span class="tooltip">Experimento</span>
+        <a [routerLink]="['/experimento']"><i class="fas fa-flask"></i></a>
+      </li>
+    </ul>
+  </div>
+  <!--Sidebar de Redes Sociales Ending-->
+</body>
+
+</html>

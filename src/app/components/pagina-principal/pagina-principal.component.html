@@ -1,0 +1,61 @@
+
+<!-- Sección Hero  -->
+
+<section class="hero container">
+    <div class="hero-info">
+      <h1 class="hero-info-heading">Los Rayos <br>Cósmicos</h1>
+      <p class="hero-info-subheading">página web dedicada a la divulgación de los rayos cósmicos con módulos prácticos y teóricos.</p>
+      <a href="./about.html" type="button" class="buttom">Leer más<i class="fas fa-angle-double-right"></i></a>
+    </div>
+    <div class="hero-img">
+      <a href="https://credo.science/"><img src="./assets/img/logo.png" alt="Logo de Uex"></a>
+    </div>
+</section>
+  <!-- Finalización Sección Hero -->
+  <!--Inicio Sección Modulos-->
+<section id="modulos" class="modulos container">
+    <div class="modulos-header">
+      <h1 class="modulos-header-heading"><span>Mod</span>ulos</h1>
+      <p class="modulos-header-desc">Esta página web va a estar dividida en 3 secciones o módulos: Teoría, práctica y un experimento.</p>
+    </div>
+    <div class="modulos-info">
+      <div class="modulo">
+        <div class="modulo-card">
+          <div class="modulo-front">
+            <i class="far fa-address-book"></i>
+            <h1 class="modulo-front-heading">Teoría</h1>
+          </div>
+          <div class="modulo-back">
+            <h1 class="modulo-back-heading"><a [routerLink]="['/pagina-teoria']">Teoría <i class="fas fa-angle-double-right"></i> </a></h1>
+            <p class="modulo-back-desc">En esta sección veremos todo lo que conocemos sobre los rayos cósmicos desde los inicios hasta en la actualidad.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="modulo-card">
+          <div class="modulo-front">
+            <i class="fas fa-pencil-alt"></i>
+            <h1 class="modulo-front-heading">Práctica</h1>
+          </div>
+          <div class="modulo-back">
+            <h1 class="modulo-back-heading"><a [routerLink]="['/pagina-teoria']">Práctica <i class="fas fa-angle-double-right"></i> </a></h1>
+            <p class="modulo-back-desc">En esta sección abordaremos una serie de problemas y ejercicios para afianzar los conocimientos de la parte teórica.</p>
+          </div>
+        </div>
+      </div>
+      <div class="modulo">
+        <div class="modulo-card">
+          <div class="modulo-front">
+            <i class="fas fa-flask"></i>
+            <h1 class="modulo-front-heading">Experimento</h1>
+          </div>
+          <div class="modulo-back">
+            <h1 class="modulo-back-heading"><a [routerLink]="['/experimento']">Experimento <i class="fas fa-angle-double-right"></i> </a></h1>
+            <p class="modulo-back-desc">En esta sección vamos a realizar o construir un detector de rayos cósmicos casero.</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+</section>
+
+  <!--Finalizacion Sección Modulo-->

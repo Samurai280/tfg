@@ -1,0 +1,141 @@
+/*SECTION PROJECTS THEORY AND PRACCTIC*/
+
+#projects .projects-header .section-title {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+    margin-top: 50px;
+  }
+  
+  #projects .projects-header .section-title span {
+    color: crimson;
+  }
+  
+  #projects .projects {
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 0;
+  }
+  
+  #projects .projects-header {
+    margin-bottom: 30px;
+  }
+  
+  #projects .all-projects {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  #projects .project-item {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 80%;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  #projects .project-info {
+    padding: 30px;
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: linear-gradient(70deg, black, grey);
+    color: whitesmoke;
+  }
+  
+  #projects .project-info h1 {
+    margin-bottom: 20px;
+  }
+  
+  #projects .project-info h1 a {
+    font-size: 4rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #projects .project-info .buttom {
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  #projects .project-info h1 a:hover {
+    color: black;
+  }
+  
+  #projects .project-info p {
+    color: white;
+    font-size: 1.5rem;
+  }
+  
+  #projects .project-img {
+    flex-basis: 50%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    height: auto;
+  }
+  
+  #projects .project-img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #projects .project-img:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(60deg, #303131 0%, #929597 100%);
+    opacity: .7;
+  }
+  
+  #projects .project-img img {
+    transition: .3s ease transform;
+  }
+  
+  #projects .project-item:hover .project-img img {
+    transform: scale(1.1);
+  }
+  
+  /*END SECTION "PROJECTS" DE THEORY AND PRACT*/
+  /*/////////////////////////////////////////////////////////*/
+
+@media only screen and (min-width: 1000px) {  
+  #projects .project-item {
+    flex-direction: row;
+  }
+
+  #projects .project-item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  #projects .project-item {
+    height: 400px;
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #projects .all-projects .project-info {
+    height: 100%;
+  }
+
+  #projects .all-projects .project-img {
+    height: 100%;
+  }
+}

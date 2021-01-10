@@ -1,0 +1,127 @@
+/*Section Tipo Test*/
+
+.intro .contenedor {
+  background: whitesmoke;
+  padding: 2rem 2rem;
+  font-size: 18px;
+  margin-top: 140px;
+  margin-bottom: 100px;
+  position: relative;
+  z-index: 100;
+  width: 90vw;
+  border: 10px double black;
+}
+
+.intro .contenedor::after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+  z-index: -1;
+  background-image: url("./img/37775.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.08;
+  
+}
+
+.intro .contenedor h1 {
+  -webkit-text-stroke: 1px black;
+  font-size: 120px;
+}
+.contenedor-grip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px;  
+}
+/*///////////////////////////////////////////*/
+
+.test-a {
+  margin-top: 20px;
+  background: linear-gradient(70deg, black, rgb(51, 50, 50));
+  width: 32vw;
+  border-radius: 2%;
+  margin-left: 40px;
+}
+.test-a .leftSide {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.test-a .leftSide img{
+  height: 250px;
+  width: 32vw;
+ 
+}
+.test-a .rightSide {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.test-a .rightSide h1{
+ 
+  font-size: 30px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/*//////////////////////////////////////////////////*/
+
+@media(max-width: 1000px) {
+  .intro .contenedor h1 {
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+  }
+  .contenedor-grip {
+    grid-template-columns: 1fr;
+  }
+  .buttom {
+    padding: 1.2rem 1.2rem;
+  }
+  .test-a {
+    margin-top: 20px;
+    background: linear-gradient( 70deg, black, rgb(51, 50, 50));
+    
+    width: 80vw;
+    border-radius: 2%;
+    margin-left: 0;
+  }
+  .test-a .leftSide {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .test-a .leftSide img{
+    height: auto;
+    width: auto;
+   
+  }
+  .test-a .rightSide {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  
+  }
+  .test-a .rightSide h1{
+   
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+}
+@media(max-width: 500px) {
+  .test-a {
+    width: 75vw;
+  }
+}

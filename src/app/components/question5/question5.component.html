@@ -1,0 +1,65 @@
+<div class="intro container">
+    <div class="contenedor">
+    <div class="container">
+
+        <div class="box-ant5" id="startScreen5" >
+            <p>Experimento: Cámara de Niebla.</p>
+            <button class="buttom" onclick="showTest5()">Empezar el test</button>
+
+        </div>
+
+        <div class="box5" id="questionScreen5" style="display: none;">
+            <div class="title">
+                Cámara de niebla
+            </div>
+            <div class="title6">
+                Pregunta 1 de 10
+            </div>
+            <div class="header1">
+                <div class="scoreBox5">Aciertos: <span></span></div>
+                <div class="timerBox5"> Fallos : <span></span> </div>
+            </div>
+            <div class="questionBox5">
+                ¿Cuáles de la siguintes medidas son medidas de seguridad?
+            </div>
+            <div class="optionBox5">
+                <p onclick="checkAnswer4(this)" data-opt="1"> 1.El alcohol no puede echarse encima del fieltro.Provocaría una explosión.</p>
+                <p onclick="checkAnswer4(this)" data-opt="2"> 2. EL alcohol no es apto para beber.</p>
+                <p onclick="checkAnswer4(this)" data-opt="3"> 3. EL hielo seco no puede tocarse con las manos. Riesgo de quemadura.</p>
+                <p onclick="checkAnswer4(this)" data-opt="4"> 4.1 y 3.</p>
+            </div>
+    
+            <div class="footer1">
+                <button  class="buttom" onclick="showNext5()">
+                    Siguiente
+                </button>
+                
+                <button class="buttom" onclick="showResult5(1)">
+                    Ver Resultado
+                </button>
+            </div>
+        </div>
+        <div class="box5" id="resultScreen5" style="display: none;">
+            <div class="title">
+                Resultado: Cámara de niebla.
+            </div>
+            <div class="resultBox5">
+                <label>Preguntas: </label>
+                <span id="totalQuestion5"> 10</span>
+    
+                <label>Respondidas: </label>
+                <span id="attemptlQuestion5"> 0</span>
+                <label>Correctas: </label>
+                <span id="correctAnswers5"> 10</span>
+                <label>Incorrectas: </label>
+                <span id="wrongAnswers5"> 10</span>
+            </div>
+            <div class="buttonBox5">
+                <button [routerLink]="['/test']" class="buttom">Página principal</button>
+                <button  class="buttom" (click)="recargar()">Reinicar/ Recargar Test</button>
+            </div>
+        </div>
+    </div>    
+        
+    </div> 
+</div>  

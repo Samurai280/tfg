@@ -1,0 +1,195 @@
+/*SECTTION DESCUBRIMIENTO*/
+.intro .contenedor {
+    background-color: whitesmoke;
+    padding: 2rem 2rem;
+    font-size: 2.7vw;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    border: 10px double black;
+    position: relative;
+    z-index: 100;
+    width: 90vw;
+  }
+  
+  .intro .contenedor::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url("./img/37775.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.08;
+  }
+  
+  .intro .contenedor h1 {
+    -webkit-text-stroke: 1px black;
+    font-size: 30px;
+  }
+.intro .contenedor .desc-imagen {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .intro .contenedor .desc-imagen .img-1 a img{
+    height: 30vh;
+  }
+  
+  .intro .contenedor .desc-imagen .img-1 p {
+    text-align: left;
+    font-family: 'Ranchers', cursive;
+    margin-bottom: 20px;
+    margin-left: 20px;
+  }
+  .intro .contenedor .desc-imagen .img-2 a img{
+    height: 30vh;
+    width: auto;
+  }
+  
+  .intro .contenedor .desc-imagen .img-2 p {
+    text-align: left;
+    margin-left: 20px;
+    font-family: 'Ranchers', cursive;
+  }
+  .intro .contenedor .desc-imagen .img-3 a img {
+    height: 20vh;
+    margin-top: 20px;
+  }
+  .intro .contenedor .desc-imagen .img-3 p {
+    text-align: center;
+    font-family: 'Ranchers', cursive;
+    margin-bottom: 20px;
+  }
+  .intro .contenedor .desc-imagen .img-4 a img {
+    height: 20vh;
+  }
+  .intro .contenedor .desc-imagen .img-4 p {
+    text-align: left;
+    font-family: 'Ranchers', cursive;
+    margin-bottom: 20px;
+  }
+  .img-4,
+  .img-3,
+  .img-piones{
+    margin-top: 20px;
+  }
+  .img-piones img {
+    width: 800px;
+  }
+  .img-piones p {
+    margin-top: 20px;
+    font-family: 'Ranchers', cursive;
+  }
+  /*FINAL SECTION DESCUBRIMIENTO*/
+  /*///////////////////////////////////////////////*/
+
+  @media only screen and (min-width: 1000px) {
+    .intro .contenedor {
+        background-color: whitesmoke;
+        padding: 4rem 10rem;
+        font-size: 1vw;
+        margin: 0px 140px;
+        margin-top: 140px;
+        margin-bottom: 100px;
+        border: 10px double black;
+        position: relative;
+        z-index: 1;
+        width: 95%;
+      }
+      .intro .contenedor::after {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.4;
+        z-index: -1;
+        background-image: url("./img/37775.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.08;
+      }
+      .intro .contenedor h1 {
+        -webkit-text-stroke: 1px black;
+        font-size: 100px;
+      }
+   }  
+   
+  /*INICIO DE SECTION "DESCUBRIMIENTO"*/
+@media  (min-width: 1400px) {
+    .intro .contenedor .desc-imagen {
+      padding: 30px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .intro .contenedor .desc-imagen .img-1 a img{
+      height: 40vh;
+    }
+  
+    .intro .contenedor .desc-imagen .img-1 p {
+      text-align: center;
+      font-family: 'Ranchers', cursive;
+    }
+    .intro .contenedor .desc-imagen .img-2 a img{
+      height: 40vh;
+      width: auto;
+      margin-left: 160px;
+    }
+  
+    .intro .contenedor .desc-imagen .img-2 p {
+      text-align: center;
+      margin-left: 170px;
+      font-family: 'Ranchers', cursive;
+    }
+  
+  
+    .intro .contenedor .desc-imagen .img-3 a img{
+      height: 40vh;
+    }
+  
+    .intro .contenedor .desc-imagen .img-3 p {
+      text-align: center;
+      font-family: 'Ranchers', cursive;
+    }
+  
+    .intro .contenedor .desc-imagen .img-4 a img{
+      height: 40vh;
+      width: auto;
+      margin-left: 60px;
+    }
+    .intro .contenedor .desc-imagen .img-4 p {
+      text-align: center;
+      margin-left: 60px;
+      font-family: 'Ranchers', cursive;
+    }
+    .img-piones{
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-left: 60px;
+      margin-top: 40px;
+    }
+    .img-piones img {
+      width: 800px;
+    }
+    .img-piones p {
+      margin-top: 20px;
+      font-family: 'Ranchers', cursive;
+    }
+}
+  

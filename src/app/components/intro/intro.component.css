@@ -1,0 +1,213 @@
+/*SECTION INTRODUCCIÓN PARA MÓVILES*/
+.intro .contenedor {
+    background-color: whitesmoke;
+    padding: 2rem 2rem;
+    font-size: 2.5vw;
+    margin-top: 140px;
+    margin-bottom: 100px;
+    border: 10px double black;
+    position: relative;
+    z-index: 100;
+    width: 95%;
+  }
+  
+  .intro .contenedor::after {
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.4;
+    z-index: -1;
+    background-image: url("./img/37775.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.08;
+  }
+  
+  .intro .contenedor h1 {
+    -webkit-text-stroke: 1px black;
+    font-size: 40px;
+  }
+  
+  .intro .contenedor .article-video {
+    padding: 80px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+  }
+  .marcoFoto-1 video {
+    transition: all .4s ease;
+    width: 100%;
+  }
+  .marcoFoto-1 video:hover {
+    transform:scale(1.5) rotate(0deg);
+    width: 1200px;
+  }
+  
+  .intro .contenedor .article-video video {
+    width: 50vw;
+    cursor: pointer;
+  }
+  
+  .intro .contenedor ul {
+    margin-top: 20px;
+    margin-left: 30px;
+  }
+  .column-double {
+    margin-top: 20px;
+  }
+  
+  .intro .contenedor .column-double p {
+    width: 95%;
+  }
+  
+  .intro .contenedor .column-double .img-ccs img,
+  .intro .contenedor .column-double .img-ccs {
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .intro .contenedor .column-double .img-ccs p {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-left: 0px;
+    margin-bottom: 20px;
+    font-family: 'Ranchers', cursive;
+  }
+  
+  .intro .contenedor ul li span {
+    font-family: 'Ranchers', cursive;
+    color: black;
+  }
+  
+  .table-1 table {
+    width: 50vw;
+  }
+  
+  .table-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .table-1 caption {
+    margin: 10px 0px;
+    font-family: 'Ranchers', cursive;
+  }
+  
+  .table-1 tbody tr th {
+    background-color: gray;
+  }
+  
+  .table-1 tbody tr td {
+    background-color: whitesmoke;
+    text-align: center;
+  }
+  
+  /*FINAL INTRODUCCIÓN PARA MÓVILES*/
+
+@media only screen and (min-width: 1000px) {
+    .intro .contenedor {
+        background-color: whitesmoke;
+        padding: 4rem 10rem;
+        font-size: 1vw;;
+        margin: 0px 140px;
+        margin-top: 140px;
+        margin-bottom: 100px;
+        border: 10px double black;
+        position: relative;
+        z-index: 1;
+        width: 95%;
+      }
+      .intro .contenedor::after {
+        position: absolute;
+        content: " ";
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: black;
+        opacity: 0.4;
+        z-index: -1;
+        background-image: url("./img/37775.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: 0.08;
+      }
+      .intro .contenedor h1 {
+        -webkit-text-stroke: 1px black;
+        font-size: 100px;
+      }
+      .intro .contenedor .article-video {
+        padding: 220px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      .table-1 table {
+        width: 500px;
+      }
+      .intro .contenedor .article-video video {
+        height: 420px;
+        width: auto;
+        cursor: pointer;
+      }
+      .intro .contenedor ul{
+        margin-top: 20px;
+        margin-left: 30px;
+      }
+      .intro .contenedor .column-double p{
+        width: 80%;
+      }
+      .intro .contenedor .column-double .img-ccs img{
+        width: 100%;
+      }
+      .intro .contenedor .column-double .img-ccs p{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin-left: 70px;
+        margin-bottom: 40px;
+        font-family: 'Ranchers', cursive;
+      }
+      .intro .contenedor ul li span {
+        font-family: 'Ranchers', cursive;
+        color: black;
+      }
+      .intro .contenedor .column-double {
+        display: grid;
+        grid-template-columns: 1fr  1fr ;
+      }
+      .table-1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .table-1 caption {
+        margin: 10px 0px;
+        font-family: 'Ranchers', cursive;
+      }
+      .table-1 tbody tr th {
+        background-color: gray;
+      }
+      .table-1 tbody tr td {
+        background-color: whitesmoke;
+        text-align: center;
+      }
+      .marcoFoto-1 video:hover {
+        transform:none
+      }
+      
+    }

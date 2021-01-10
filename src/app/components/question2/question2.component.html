@@ -1,0 +1,65 @@
+<div class="intro container">
+    <div class="contenedor">
+    <div class="container">
+
+        <div class="box-ant2" id="startScreen2" >
+            <p>Módulo Práctio: Partículas Elementales.</p>
+            <button class="buttom" onclick="showTest2()">Empezar el test</button>
+
+        </div>
+
+        <div class="box2 " id="questionScreen2" style="display: none;">
+            <div class="title">
+                Partículas Elementales.
+            </div>
+            <div class="title3">
+                Pregunta 1 de 20
+            </div>
+            <div class="header1">
+                <div class="scoreBox2">Aciertos: <span></span></div>
+                <div class="timerBox2"> Fallos : <span></span> </div>
+            </div>
+            <div class="questionBox2">
+                ¿Qué partícula o elemento fue considerado como la partícula fundamental durante mucho tiempo?
+            </div>
+            <div class="optionBox2">
+                <p onclick="checkAnswer1(this)" data-opt="1"> 1. Los protones y neutrones.</p>
+                <p onclick="checkAnswer1(this)" data-opt="2"> 2. Los bosones.</p>
+                <p onclick="checkAnswer1(this)" data-opt="3"> 3. Los fermiones.</p>
+                <p onclick="checkAnswer1(this)" data-opt="4"> 4. EL átomo.</p>
+            </div>
+    
+            <div class="footer1">
+                <button  class="buttom" onclick="showNext1()">
+                    Siguiente
+                </button>
+                
+                <button class="buttom" onclick="showResult1(1)">
+                    Ver Resultado
+                </button>
+            </div>
+        </div>
+        <div class="box2 " id="resultScreen2" style="display: none;">
+            <div class="title">
+                Resultado: Partículas Elementales
+            </div>
+            <div class="resultBox2">
+                <label>Preguntas: </label>
+                <span id="totalQuestion2"> 10</span>
+    
+                <label>Respondidas: </label>
+                <span id="attemptlQuestion2"> 0</span>
+                <label>Correctas: </label>
+                <span id="correctAnswers2"> 10</span>
+                <label>Incorrectas: </label>
+                <span id="wrongAnswers2"> 10</span>
+            </div>
+            <div class="buttonBox2">
+                <button [routerLink]="['/test']" class="buttom">Página principal</button>
+                <button  class="buttom" (click)="recargar()">Reinicar/ Recargar Test</button>
+            </div>
+        </div>
+    </div>    
+        
+    </div> 
+</div>  

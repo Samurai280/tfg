@@ -1,0 +1,66 @@
+<div class="intro container">
+    <div class="contenedor">
+    <div class="container">
+        <div class="box-ant" id="startScreen">
+            <p>Módulo Práctio: Introducción</p>
+            <button class="buttom" onclick="showTest()">Empezar el test</button>
+        
+        </div>
+        
+        <div class="box " id="questionScreen" style="display: none;">
+                <div class="title">
+                    Introducción
+                </div>
+                <div class="title1">
+                    Pregunta 1 de 10
+                </div>
+                <div class="header1">
+                    <div class="scoreBox0">Aciertos: <span></span></div>
+                    <div class="timerBox0"> Fallos : <span></span> </div>
+                </div>
+                <div class="questionBox">
+                    ¿De donde proceden los rayos cósmicos menos energéticos que llegan a la superficie atmosférica?
+                </div>
+                <div class="optionBox">
+                    <p onclick="checkAnswer0(this)" data-opt="1">1.De la luna.</p>
+                    <p onclick="checkAnswer0(this)" data-opt="2">2. De planetas como Venus. </p>
+                    <p onclick="checkAnswer0(this)" data-opt="3">3. Del Sol.</p>
+                    <p onclick="checkAnswer0(this)" data-opt="4">4. De la materia estelar.</p>
+                </div>
+        
+                <div class="footer1">
+                    <button  class="buttom" onclick="showNext0()">
+                        Siguiente
+                    </button>
+                    
+                    <button class="buttom" onclick="showResult0(1)">
+                        Ver Resultado
+                    </button>
+                </div>
+        </div>
+        <div class="box " id="resultScreen" style="display: none;">
+                <div class="title">
+                    Resultado: Introducción
+                </div>
+                <div class="resultBox">
+                    <label>Preguntas: </label>
+                    <span id="totalQuestion"> 10</span>
+        
+                    <label>Respondidas: </label>
+                    <span id="attemptlQuestion"> 0</span>
+                    <label>Correctas: </label>
+                    <span id="correctAnswers"> 10</span>
+                    <label>Incorrectas: </label>
+                    <span id="wrongAnswers"> 10</span>
+                </div>
+                <div class="buttonBox">
+                    <button [routerLink]="['/test']" class="buttom">Página principal</button>
+                    <button  class="buttom" (click)="recargar()">Reinicar/ Recargar Test</button>
+                </div>
+                
+        </div>  
+    </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,267 @@
+/*Hero Section en pantallas para móviles*/
+.hero {
+    min-height: 80vh;
+    height: 100vh;
+    width: 100%;
+    padding-top: 50px;
+    justify-content: center;
+    background: linear-gradient(70deg, black, grey);
+    background-image: url("./img/Planeta.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero .hero-info {
+    width: 100%;
+    text-align: center;
+  }
+  
+  .hero .hero-info .hero-info-heading {
+    font-size: 4.5rem;
+    text-transform: capitalize;
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .hero .hero-info .hero-info-subheading {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    letter-spacing: .5rem;
+    color: whitesmoke;
+  }
+  
+  .hero .hero-info .hero-info-button {
+    text-decoration: none;
+    margin-top: 30px;
+    padding: 2rem 5rem;
+    display: inline-block;
+    font-size: 1.6rem;
+    color: white;
+    letter-spacing: .3rem;
+    border: 1px solid whitesmoke;
+    background-color: rgba(12, 12, 12, 0.534);
+    margin-bottom: 30px;
+  }
+  
+  .hero .hero-info .hero-info-button:hover {
+    background-color: rgba(80, 17, 17, 0.938);
+  }
+  
+  .hero .hero-info .hero-info-button i {
+    padding-left: 3px;
+  }
+  
+  .hero .hero-img {
+    /*Aquí se esta definendo el espacio que tenemos para la "el logo de la asociación"*/
+    height: auto;
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+  
+  .hero .hero-img img {
+    height: 100%;
+    width: 100%;
+  }
+  
+  
+  /*End Hero Section para móviles*/
+  /*Modulo Section*/
+  /*////////////////////////////////////////////////////////////////////*/
+  .modulos {
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 10rem 5rem;
+  }
+  
+  .modulos .modulos-header {
+    width: 100%;
+    text-align: center;
+  }
+  .modulos .modulos-header .modulos-header-heading {
+    font-size: 4rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    color: black;
+    -webkit-text-stroke: 1px black;
+    text-transform: uppercase;
+  }
+  
+  .modulos .modulos-header .modulos-header-heading span {
+    color: crimson;
+    -webkit-text-stroke: 1px black;
+    
+  }
+  
+  .modulos .modulos-header .modulos-header-desc {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-top: 20px;
+  }
+  
+  .modulos .modulos-info {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .modulos .modulos-info .modulo {
+    width: 100%;
+    min-height: 300px;
+    position: relative;
+    transition: -3s ease transform;
+    margin-bottom: 20px;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: .3s ease transform;
+    display: block;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-front,
+  .modulos .modulos-info .modulo .modulo-card .modulo-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.13);
+    padding: 10px;
+    border-radius: 8%;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-back {
+    transform: rotateY(180deg)scale(1.1);
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-front i {
+    font-size: 4rem;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-front h1 {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-transform: capitalize;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-front .modulo-front-heading,
+  .modulos .modulos-info .modulo .modulo-card .modulo-back .modulo-back-heading {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-transform: capitalize;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-back a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .modulos .modulos-info .modulo .modulo-card .modulo-back .modulo-back-desc {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  
+  .modulos .modulos-info .modulo:hover .modulo-card {
+    transform: rotateY(180deg);
+  }
+  
+  .modulos .modulos-info .modulo:nth-child(2) .modulo-card .modulo-front,
+  .modulos .modulos-info .modulo:nth-child(2) .modulo-card .modulo-back {
+    background: grey;
+  }
+  
+  .modulos .modulos-info .modulo:nth-child(1) .modulo-card .modulo-front,
+  .modulos .modulos-info .modulo:nth-child(1) .modulo-card .modulo-back {
+    background: darkgray;
+  }
+  
+  .modulos .modulos-info .modulo:nth-child(3) .modulo-card .modulo-front,
+  .modulos .modulos-info .modulo:nth-child(3) .modulo-card .modulo-back {
+    background: darkgray;
+  }
+  
+  /*Modulo Section End pra móviles*/
+  /*/////////////////////////////////////////////////////*/
+  
+
+@media only screen and (min-width: 1000px) {
+
+     /*Inicio de Sección Hero*/
+     .hero {
+      background-image: url("./img/Planeta.gif");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      flex-direction: row;
+      padding-left: 10%;
+      justify-content: center;
+      align-items: center;
+  
+    }
+
+  .hero .hero-info {
+    max-width: 30%;
+    text-align: left;
+    margin-top: 60px;
+
+  }
+
+  .hero .hero-info .hero-info-subheading {
+    font-size: 1.3rem;
+    letter-spacing: .5rem;
+    text-transform: capitalize;
+  }
+
+  .hero .hero-img {
+    width: auto;
+    height: auto;
+  }
+
+  /*Final de Sección Hero*/
+  /*Inicio de Modulos*/
+  .modulos {
+    width: 96%;
+    flex-direction: column;
+    min-height: 60vh;
+    padding: 8rem 5rem;
+  }
+
+  .modulos .modulos-header .modulos-header-heading {
+    font-size: 6rem;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px black;
+  }
+
+  .modulos .modulos-info {
+    display: grid;
+    grid-column-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+
+
+
+  
+  
